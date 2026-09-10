@@ -1,6 +1,8 @@
 name: Basic CI
 
-on: [push]
+on:
+ push:
+    branches: [master]
 
 jobs:
   say-hello:
