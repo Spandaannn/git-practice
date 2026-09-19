@@ -1,5 +1,5 @@
 const http = require('http');
 http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('Hello from ECS Fargate!\n');
+  res.end('Hello from ECS Fargate - v2!\n');
 }).listen(80, () => console.log('Listening on port 80'));
