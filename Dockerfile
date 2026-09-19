@@ -1,7 +1,5 @@
-FROM nginx:alpine
-
-COPY index.html /usr/share/nginx/html/index.html
-
+FROM node:20-alpine
+WORKDIR /app
+COPY server.js .
 EXPOSE 80
-
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["node", "server.js"]
